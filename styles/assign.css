@@ -53,7 +53,6 @@ nav ul a {
 
 .banner-des {
     color: #FFF;
-
     text-align: center;
     font-family: Mulish;
     font-size: 16px;
@@ -119,10 +118,9 @@ margin-left: 22px;
     font-weight: 800;
 }
 
-.tours-img img {
-    width: 100%;
+.tours-vid{
+    margin-top: 60px;
 }
-
 
 .tours-des {
     margin: 24px 0;
@@ -489,44 +487,45 @@ hr {
 
 /* responsive media query */
 @media screen and (max-width:600px) {
-    nav ul li {
-        display: none;
-    }
-
-    .hamburger {
-        display: block;
-    }
-
-    .banner-dropdown {
+     header{
+        padding: 20px;
+     }
+    
+     nav{
         flex-direction: column;
-        gap: 16px;
+        margin-bottom: 20px;
+     }
+     nav ul {
+        list-style: none;
+        gap: 44px;
+        
     }
-
-    .banner {
-        width: calc(100%-40px);
-        background-position: center;
-        text-align: center;
-
-        padding: 0;
-        padding: 0 20px;
-        margin-bottom: 24px;
+    .banner-section{
+        flex-direction: column;
+        height: auto;
+        width: 90%;
     }
-
-    .banner-heading {
-        font-size: 22px;
-        margin-bottom: 0;
+    .banner-content{
+        width: 80%;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
     }
-
-    .banner-des {
-        margin-bottom: 0;
+    .banner-form {
+        flex-direction: column;  
     }
-
-
-    select {
+    .where, .month, .place,.btn-primary, .banner-form {
         width: 100%;
+        margin-left: 0;
     }
-
-    /* .tours */
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+     
+     
     .tours {
         width: calc(100%-40px);
         flex-direction: column;
@@ -534,6 +533,7 @@ hr {
         padding: 0 20px;
         margin-bottom: 24px;
     }
+
 
     .tours-content p {
         margin-bottom: 16px;
@@ -661,6 +661,26 @@ hr {
 
     hr {
         margin: 24px auto;
+    }
+    .footer p {
+        
+        margin: 0 auto;
+    }
+    
+    .footer-heading,
+    .nav-title {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        margin-bottom: 16px;
+    }
+    
+    .footer-des {
+        color: rgba(19, 19, 24, 0.70);
+        font-size: 1rem;
+        font-weight: 400;
+        margin-bottom: 32px;
     }
     
 }
